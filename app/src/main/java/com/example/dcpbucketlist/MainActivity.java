@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         copyAssets();
+        // Hello
     }
 
     private void startEvent(String park) {

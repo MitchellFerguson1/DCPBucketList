@@ -1,0 +1,29 @@
+50's Prime Time Cafe\tN
+ABC Commissary\tN
+Anaheim Produce\tN
+Backlot Express\tN
+BasLine Tap House\tN
+Catalina Eddei's\tN
+Docking Bay 7 Food and Cargo\tN
+Dockside Diner\tN
+Epic Eats\tN
+Fairfax Fare\tN
+Hollywood and Vine\tN
+Hollywood Scoops\tN
+Kat Saka's Kettle\tN
+KRNR The Rock Station\tN
+Mama Melrose's Ristorante Italiano\tN
+Market\tN
+Milk Stand\tN
+Neighborhood Bakery\tN
+Oga's Cantina\tN
+PizzeRizzo\tN
+Ronto Roasters\tN
+Rosie's All American\tN
+Roundup Rodeo BBQ\tN
+Sci-Fi Dine-In Theater Restaurant\tN
+The Hollywood Brown Derby\tN
+THe Hollywood Brown Derby Lounge\tN
+The Trolley Car Cafe\tN
+Tune-In Lounge\tN
+Woody's Lunch Box\tN

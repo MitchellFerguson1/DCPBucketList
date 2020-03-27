@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">DCP Bucket List</string>
+    <string name="magic_kingdom">Magic Kingdom</string>
+    <string name="hollywood_studios">Hollywood Studios</string>
+    <string name="epcot">Epcot</string>
+    <string name="animal_kingdom">Animal Kingdom</string>
+    <string name="pick_a_park">Pick a Park</string>
+    <string name="title_activity_food_list">foodList</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="mkTODO">Open list of MK food</string>
+    <string name="epTODO">Open list of Epcot food</string>
+    <string name="akTODO">Open list of ak food</string>
+    <string name="hsTODO">Open list of hs food</string>
+    <string name="returnString">Return to parks</string>
+</resources>

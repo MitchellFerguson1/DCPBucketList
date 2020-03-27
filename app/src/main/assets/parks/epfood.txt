@@ -1,0 +1,52 @@
+\t\nWorld Showcase
+Akershus Royal Banquet Hall\tN
+Biergarten\tN
+Block and Hans\tN
+Chefs de France\tN
+Choza de Margarita\tN
+Crepes des Chefs de France\tN
+Fife and Drum Tavern\tN
+Funnel Cake\tN
+Gelati\tN
+Joy of Tea\tN
+Kabuki Cafe\tN
+Katsura Grill\tN
+Kringla Bakeri Og Kafe\tN
+L'Artisan de Glaces\tN
+Ka Cantina de San Angel\tN
+La Cava del Tequila\tN
+La Creperie de Paris\tN
+La Hacienda de San Angel\tN
+Le Cellier Steakhouse\tN
+Les Halles Boulangerie Patisserie\tN
+Les Vins des Chefs de France\tN
+Lotus Blossom Cafe\tN
+Monsieur Paul\tN
+Nine Dragons Restaurant\tN
+Popcorn in Canada\tN
+Promenade Refreshments\tN
+Refreshment Outpost\tN
+Refreshment Port\tN
+Regal Eagle Smokehouse\tN
+Restaurant Marrakesh\tN
+Rose and Crown Pub and Dining Room\tN
+San Angel Inn\tN
+Sommerfest\tN
+Spice Road Table\tN
+Takumei-Tei\tN
+Tangierine Cafe\tN
+Teppan Edo\tN
+Tokyo Dining\tN
+Tutto Gusto Wine Cellar\tN
+Tutto Italia Ristorante\tN
+UK Beer Cart\tN
+Via Napoli\tN
+Yorkshite Country Fish Shop\tN
+\t\nFuture World
+Coral Reef Restaurant\tN
+Electric Umbrella Restaurant\tN
+Garden Grill\tN
+Space 220\tN
+Sunshine Seasons\tN
+Test Track Cool Wash\tN
+The Land Cart\tN

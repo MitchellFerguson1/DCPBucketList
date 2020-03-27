@@ -1,0 +1,32 @@
+Aloha Isle\tN
+Aunt Polly's\tN
+Auntie Gravity's Galactic Goodies\tN
+Be Our Guest Restaurant\tN
+Casey's Corner\tN
+Cheshire Cage\tN
+Cinderella's Royal Table Character Dining\tN
+Columbia Harbour House\tN
+Cool Ship\tN
+Cosmic Ray's Starlight Cafe\tN
+Gaston's Tavern\tN
+Golden Oak Outpost\tN
+Jungle Navigation Co. Ltd. Skipper Canteen\tN
+Liberty Square Market\tN
+Liberty Tree Tavern\tN
+Main Street Bakery\tN
+Pecos Bill Tall Tale Inn and Cafe\tN
+Pinocchio Village Haus\tN
+Plaza Ice Cream Parlor\tN
+Prince Eric's Village Market\tN
+Sleepy Hollow\tN
+Storybook Treats\tN
+Sunshine Tree Terrace\tN
+The Crystal Palace Character Dining\tN
+The Diamond Horseshoe\tN
+The Friar's Nook\tN
+The Lunching Pad\tN
+The Plaza Restaurant\tN
+Tomorrowland Terrace Restaurant\tN
+Tony's Town Square Restaurant\tN
+Tortuga Tavern\tN
+Westward Ho\tN

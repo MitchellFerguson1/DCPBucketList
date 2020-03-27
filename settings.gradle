@@ -1,0 +1,2 @@
+rootProject.name='DCP Bucket List'
+include ':app'

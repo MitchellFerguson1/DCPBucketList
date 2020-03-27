@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Intent parkIntent = new Intent(this, parkFoodList.class);
         parkIntent.putExtra("Park name", park);
         this.startActivity(parkIntent);
+        // Hello
     }
 
     public void magicClick(View view) { startEvent("Magic Kingdom"); }

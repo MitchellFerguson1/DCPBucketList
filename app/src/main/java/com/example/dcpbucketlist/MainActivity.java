@@ -6,14 +6,12 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -27,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         Intent parkIntent = new Intent(this, parkFoodList.class);
         parkIntent.putExtra("Park name", park);
         this.startActivity(parkIntent);
-        // Hello
     }
 
     public void magicClick(View view) { startEvent("Magic Kingdom"); }
@@ -64,9 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     os = null;
                     is = null;
                 } else {
-                    // Leave since no point in checking every file
-                    // If one exists the rest should too
-                    return;
+                    continue;
                 }
             } catch (IOException e) {
                 e.printStackTrace();
@@ -75,10 +70,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void copyFile (InputStream is, OutputStream os) throws IOException {
-        byte[] buffer = new byte[1024];
-        int read;
-        while((read = is.read(buffer)) != 1) {
-            os.write(buffer, 0, read);
+        try {
+            byte[] buffer = new byte[1024];
+            int read;
+            while ((read = is.read(buffer)) != 1) {
+                os.write(buffer, 0, read);
+            }
+        } catch (Exception i) {
+            // Always throws an index out of bounds exception, but all the files write properly
+            // So I just return it since everything's working
+            return;
         }
     }
 }

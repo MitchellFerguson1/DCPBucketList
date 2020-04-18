@@ -1,52 +1,50 @@
-\t\nWorld Showcase
-Akershus Royal Banquet Hall\tN
-Biergarten\tN
-Block and Hans\tN
-Chefs de France\tN
-Choza de Margarita\tN
-Crepes des Chefs de France\tN
-Fife and Drum Tavern\tN
-Funnel Cake\tN
-Gelati\tN
-Joy of Tea\tN
-Kabuki Cafe\tN
-Katsura Grill\tN
-Kringla Bakeri Og Kafe\tN
-L'Artisan de Glaces\tN
-Ka Cantina de San Angel\tN
-La Cava del Tequila\tN
-La Creperie de Paris\tN
-La Hacienda de San Angel\tN
-Le Cellier Steakhouse\tN
-Les Halles Boulangerie Patisserie\tN
-Les Vins des Chefs de France\tN
-Lotus Blossom Cafe\tN
-Monsieur Paul\tN
-Nine Dragons Restaurant\tN
-Popcorn in Canada\tN
-Promenade Refreshments\tN
-Refreshment Outpost\tN
-Refreshment Port\tN
-Regal Eagle Smokehouse\tN
-Restaurant Marrakesh\tN
-Rose and Crown Pub and Dining Room\tN
-San Angel Inn\tN
-Sommerfest\tN
-Spice Road Table\tN
-Takumei-Tei\tN
-Tangierine Cafe\tN
-Teppan Edo\tN
-Tokyo Dining\tN
-Tutto Gusto Wine Cellar\tN
-Tutto Italia Ristorante\tN
-UK Beer Cart\tN
-Via Napoli\tN
-Yorkshite Country Fish Shop\tN
-\t\nFuture World
-Coral Reef Restaurant\tN
-Electric Umbrella Restaurant\tN
-Garden Grill\tN
-Space 220\tN
-Sunshine Seasons\tN
-Test Track Cool Wash\tN
-The Land Cart\tN
+Akershus Royal Banquet Hall	N
+Biergarten	N
+Block and Hans	N
+Chefs de France	N
+Choza de Margarita	N
+Crepes des Chefs de France	N
+Fife and Drum Tavern	N
+Funnel Cake	N
+Gelati	N
+Joy of Tea	N
+Kabuki Cafe	N
+Katsura Grill	N
+Kringla Bakeri Og Kafe	N
+L'Artisan de Glaces	N
+Ka Cantina de San Angel	N
+La Cava del Tequila	N
+La Creperie de Paris	N
+La Hacienda de San Angel	N
+Le Cellier Steakhouse	N
+Les Halles Boulangerie Patisserie	N
+Les Vins des Chefs de France	N
+Lotus Blossom Cafe	N
+Monsieur Paul	N
+Nine Dragons Restaurant	N
+Popcorn in Canada	N
+Promenade Refreshments	N
+Refreshment Outpost	N
+Refreshment Port	N
+Regal Eagle Smokehouse	N
+Restaurant Marrakesh	N
+Rose and Crown Pub and Dining Room	N
+San Angel Inn	N
+Sommerfest	N
+Spice Road Table	N
+Takumei-Tei	N
+Tangierine Cafe	N
+Teppan Edo	N
+Tokyo Dining	N
+Tutto Gusto Wine Cellar	N
+Tutto Italia Ristorante	N
+UK Beer Cart	N
+Via Napoli	N
+Yorkshite Country Fish Shop	N
+Coral Reef Restaurant	N
+Electric Umbrella Restaurant	N
+Garden Grill	N
+Space 220	N
+Sunshine Seasons	N
+Test Track Cool Wash	N
+The Land Cart	N

@@ -1,33 +1,33 @@
-Anandapur Ice Cream Truck\tN
-Caravan Road\tN
-Creature Comforts\tN
-Dawa Bar\tN
-Dino Diner\tN
-Dino-Bite Snacks\tN
-Drinkwallah\tN
-Eight Spoon Cafe\tN
-Flame Tree Barbecue\tN
-Harambe Fruit Market\tN
-Harambe Market\tN
-Isle of Java\tN
-Kusafiri Coffee Shop and Bakery\tN
-Mahindi\tN
-Nomad Lounge\tN
-Pizzafari\tN
-Pizzafari Family-Style Dining\tN
-Pongu Pongu\tN
-Rainforest Cafe at Animal Kingdom\tN
-Restaurantosaurus\tN
-Restaurantosaurus Burgers and Sundaes\tN
-Satu'li Canteen\tN
-Tamu Tamu Refreshments\tN
-Terra Treats\tN
-The Smiling Crocodile\tN
-Thirsty River Bar and Trek Snacks\tN
-Tiffins\tN
-Trilo-Bites\tN
-Tusker House Restaurant\tN
-Warung Outpost\tN
-Yak and Yeti Local Food Cafes\tN
-Yak and Yeti Quality Beverages\tN
-Yak and Yeti Restaurant\tN
+Anandapur Ice Cream Truck	N
+Caravan Road	N
+Creature Comforts	N
+Dawa Bar	N
+Dino Diner	N
+Dino-Bite Snacks	N
+Drinkwallah	N
+Eight Spoon Cafe	N
+Flame Tree Barbecue	N
+Harambe Fruit Market	N
+Harambe Market	N
+Isle of Java	N
+Kusafiri Coffee Shop and Bakery	N
+Mahindi	N
+Nomad Lounge	N
+Pizzafari	N
+Pizzafari Family-Style Dining	N
+Pongu Pongu	N
+Rainforest Cafe at Animal Kingdom	N
+Restaurantosaurus	N
+Restaurantosaurus Burgers and Sundaes	N
+Satu'li Canteen	N
+Tamu Tamu Refreshments	N
+Terra Treats	N
+The Smiling Crocodile	N
+Thirsty River Bar and Trek Snacks	N
+Tiffins	N
+Trilo-Bites	N
+Tusker House Restaurant	N
+Warung Outpost	N
+Yak and Yeti Local Food Cafes	N
+Yak and Yeti Quality Beverages	N
+Yak and Yeti Restaurant	N

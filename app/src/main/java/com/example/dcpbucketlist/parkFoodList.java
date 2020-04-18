@@ -8,10 +8,13 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.util.Objects;
+import java.util.Scanner;
 
 public class parkFoodList extends AppCompatActivity {
     String file;
@@ -49,10 +52,19 @@ public class parkFoodList extends AppCompatActivity {
 
         LinearLayout lr = (LinearLayout) findViewById(R.id.linearLayout);
 
-        for(int i = 0; i < 20; i++) {
-            CheckBox cb = new CheckBox(getApplicationContext());
-            cb.setText("Something");
-            lr.addView(cb);
+        try {
+            String line;
+            BufferedReader br = new BufferedReader(new InputStreamReader(is));
+            Scanner s;
+            while ( (line = br.readLine()) != null) {
+                s = new Scanner(line).useDelimiter("\\t");
+                CheckBox cb = new CheckBox(getApplicationContext());
+                cb.setText(s.next());
+                lr.addView(cb);
+                s.close();
+            }
+        } catch (IOException e) {
+            System.err.println(e);
         }
     }
 

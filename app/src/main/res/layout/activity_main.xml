@@ -33,7 +33,7 @@
             <ImageButton
                 android:id="@+id/magicKingdom"
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
+                android:layout_height="175dp"
                 android:contentDescription="@string/mkTODO"
                 android:onClick="magicClick"
                 app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -43,7 +43,7 @@
             <ImageButton
                 android:id="@+id/epcot"
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
+                android:layout_height="175dp"
                 android:contentDescription="@string/epTODO"
                 android:onClick="epcotClick"
                 app:layout_constraintTop_toBottomOf="@+id/magicKingdom"
@@ -53,7 +53,7 @@
             <ImageButton
                 android:id="@+id/animalKingdom"
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
+                android:layout_height="175dp"
                 android:contentDescription="@string/akTODO"
                 android:onClick="animalClick"
                 app:layout_constraintTop_toBottomOf="@+id/epcot"
@@ -64,7 +64,7 @@
             <ImageButton
                 android:id="@+id/hollywood"
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
+                android:layout_height="175dp"
                 android:contentDescription="@string/hsTODO"
                 android:onClick="hollywoodClick"
                 app:layout_constraintTop_toBottomOf="@+id/animalKingdom"

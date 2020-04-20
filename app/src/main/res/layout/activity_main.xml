@@ -13,51 +13,65 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
-        <TextView
-            android:id="@+id/textView"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:height="80dp"
-            android:gravity="center"
-            android:text="@string/pick_a_park"
-            android:textColor="#231F1F"
-            android:textSize="50sp" />
+            android:layout_height="match_parent">
 
-    <ImageButton
-        android:id="@+id/magicKingdom"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        app:srcCompat="@drawable/magickingdom"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="150dp"
-        android:onClick="magicClick"
-        android:contentDescription="@string/mkTODO" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="80dp"
+                android:gravity="center"
+                android:text="@string/pick_a_park"
+                android:textColor="#231F1F"
+                android:textSize="50sp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp" />
 
-    <ImageButton
-        android:id="@+id/epcot"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        app:srcCompat="@drawable/epcot"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="300dp"
-        android:onClick="epcotClick"
-        android:contentDescription="@string/epTODO" />
+            <ImageButton
+                android:id="@+id/magicKingdom"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:contentDescription="@string/mkTODO"
+                android:onClick="magicClick"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:srcCompat="@drawable/magickingdom"
+                tools:layout_editor_absoluteX="0dp" />
 
-        <ImageButton
-            android:id="@+id/animalKingdom"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            app:srcCompat="@drawable/animalkingdom"
-            android:onClick="animalClick"
-            android:contentDescription="@string/akTODO" />
+            <ImageButton
+                android:id="@+id/epcot"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:contentDescription="@string/epTODO"
+                android:onClick="epcotClick"
+                app:layout_constraintTop_toBottomOf="@+id/magicKingdom"
+                app:srcCompat="@drawable/epcot"
+                tools:layout_editor_absoluteX="16dp" />
 
-        <ImageButton
-            android:id="@+id/hollywood"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            app:srcCompat="@drawable/hollywood"
-            android:onClick="hollywoodClick"
-            android:contentDescription="@string/hsTODO" />
+            <ImageButton
+                android:id="@+id/animalKingdom"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:contentDescription="@string/akTODO"
+                android:onClick="animalClick"
+                app:layout_constraintTop_toBottomOf="@+id/epcot"
+                app:srcCompat="@drawable/animalkingdom"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <ImageButton
+                android:id="@+id/hollywood"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:contentDescription="@string/hsTODO"
+                android:onClick="hollywoodClick"
+                app:layout_constraintTop_toBottomOf="@+id/animalKingdom"
+                app:srcCompat="@drawable/hollywood"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

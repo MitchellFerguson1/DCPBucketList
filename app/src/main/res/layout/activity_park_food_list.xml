@@ -6,28 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".parkFoodList">
 
-    <ScrollView
+    <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="639dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints" >
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"></LinearLayout>
-    </ScrollView>
+            android:layout_height="600dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
 
-    <Button
-    android:id="@+id/returnBtn"
-    android:layout_width="match_parent"
-    android:layout_height="61dp"
-    android:onClick="finish"
-    android:text="@string/returnString"
-    app:layout_constraintEnd_toEndOf="parent"
-    tools:ignore="MissingConstraints"
-    tools:layout_editor_absoluteY="640dp" />
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/returnBtn"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:onClick="finish"
+            android:text="@string/returnString"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

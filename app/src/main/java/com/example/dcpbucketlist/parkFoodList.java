@@ -60,6 +60,8 @@ public class parkFoodList extends AppCompatActivity {
                 s = new Scanner(line).useDelimiter("\\t");
                 CheckBox cb = new CheckBox(getApplicationContext());
                 cb.setText(s.next());
+                if (s.next().equals("Y"))
+                    cb.setChecked(true);
                 lr.addView(cb);
                 s.close();
             }

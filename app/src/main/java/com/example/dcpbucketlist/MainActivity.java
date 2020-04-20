@@ -2,23 +2,33 @@ package com.example.dcpbucketlist;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.view.View;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.util.Scanner;
 
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        copyAssets();
+        try {
+            copyAssets();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void startEvent(String park) {
@@ -27,59 +37,38 @@ public class MainActivity extends AppCompatActivity {
         this.startActivity(parkIntent);
     }
 
-    public void magicClick(View view) { startEvent("Magic Kingdom"); }
+    public void magicClick(View view) { startEvent("MagicKingdom"); }
 
-    public void hollywoodClick(View view) { startEvent("Hollywood Studios"); }
+    public void hollywoodClick(View view) { startEvent("HollywoodStudios"); }
 
-    public void animalClick(View view) { startEvent("Animal Kingdom"); }
+    public void animalClick(View view) { startEvent("AnimalKingdom"); }
 
     public void epcotClick(View view) { startEvent("Epcot"); }
 
 
     // Gotten (and modified) from https://gist.github.com/thinzaroo/5aef6e81638529a89995
-    private void copyAssets() {
-        AssetManager am = getAssets();
-        String[] files = null;
-        try {
-            files = am.list("parks");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    private void copyAssets() throws IOException {
+        String[] parkNames = {"MagicKingdom", "Epcot", "HollywoodStudios", "AnimalKingdom"};
+        String[] files = {"mkfood.txt", "epfood.txt", "hsfood.txt", "akfood.txt"};
 
-        for (String filename : files) {
-            InputStream is = null;
-            OutputStream os = null;
-            try {
-                is = am.open("parks/" + filename);
-                File outFile = new File(getApplicationContext().getFilesDir(), filename);
-                if (!outFile.exists()) {
-                    os = new FileOutputStream(outFile);
-                    copyFile(is, os);
-                    is.close();
-                    os.flush();
-                    os.close();
-                    os = null;
-                    is = null;
-                } else {
-                    continue;
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
+        for (int i = 0; i < files.length; i++) {
+            SharedPreferences pref = getApplicationContext().getSharedPreferences(parkNames[i], 0);
+            @SuppressLint("CommitPrefEdits") SharedPreferences.Editor editor = pref.edit();
+            InputStream is = getApplicationContext().openFileInput(files[i]);
+            BufferedReader br = new BufferedReader(new InputStreamReader(is));
+            Scanner s = null;
+            String line;
+            while ((line = br.readLine()) != null) {
+                s = new Scanner(line).useDelimiter("\\t");
+                String name = s.next();
+                if (pref.contains(name))
+                    break;
+                editor.putBoolean(name, false).apply();
             }
-        }
-    }
-
-    private void copyFile (InputStream is, OutputStream os) throws IOException {
-        try {
-            byte[] buffer = new byte[1024];
-            int read;
-            while ((read = is.read(buffer)) != 1) {
-                os.write(buffer, 0, read);
-            }
-        } catch (Exception i) {
-            // Always throws an index out of bounds exception, but all the files write properly
-            // So I just return it since everything's working
-            return;
+            if (s != null)
+                s.close();
+            br.close();
+            is.close();
         }
     }
 }

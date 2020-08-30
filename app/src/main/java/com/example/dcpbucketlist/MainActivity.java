@@ -49,9 +49,13 @@ public class MainActivity extends AppCompatActivity {
         String[] parkNames = {"MagicKingdom", "Epcot", "HollywoodStudios", "AnimalKingdom"};
         String[] files = {"mkfood.txt", "epfood.txt", "hsfood.txt", "akfood.txt"};
 
+        // Loop through all the park preferences specified above
         for (int i = 0; i < files.length; i++) {
+            // Get shared preferences with all the park names specified above
             SharedPreferences pref = getApplicationContext().getSharedPreferences(parkNames[i], 0);
+            // Create an editor with the preferences
             @SuppressLint("CommitPrefEdits") SharedPreferences.Editor editor = pref.edit();
+            // Open or create the file for the specific park. Basic file readin
             InputStream is = getApplicationContext().openFileInput(files[i]);
             BufferedReader br = new BufferedReader(new InputStreamReader(is));
             Scanner s = null;
@@ -59,10 +63,14 @@ public class MainActivity extends AppCompatActivity {
             while ((line = br.readLine()) != null) {
                 s = new Scanner(line).useDelimiter("\\t");
                 String name = s.next();
+                // Check to see if the restaurant is in the preference
                 if (pref.contains(name))
+                    // If it is break since I don't plan on updating this until before I leave
                     break;
+                // Set the value to false
                 editor.putBoolean(name, false).apply();
             }
+            // Close everything
             if (s != null)
                 s.close();
             br.close();

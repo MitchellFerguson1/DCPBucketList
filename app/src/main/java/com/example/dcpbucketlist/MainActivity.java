@@ -45,8 +45,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void epcotClick(View view) { startEvent("Epcot"); }
 
-
-    // Gotten (and modified) from https://gist.github.com/thinzaroo/5aef6e81638529a89995
     private void copyAssets() throws IOException {
         String[] parkNames = {"MagicKingdom", "Epcot", "HollywoodStudios", "AnimalKingdom"};
         String[] files = {"mkfood.txt", "epfood.txt", "hsfood.txt", "akfood.txt"};

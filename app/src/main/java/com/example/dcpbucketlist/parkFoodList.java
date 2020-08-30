@@ -19,6 +19,7 @@ import java.io.OutputStream;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Scanner;
+import java.util.TreeMap;
 
 public class parkFoodList extends AppCompatActivity {
     @Override
@@ -36,7 +37,7 @@ public class parkFoodList extends AppCompatActivity {
         LinearLayout lr = findViewById(R.id.linearLayout);
 
         SharedPreferences pref = getApplicationContext().getSharedPreferences(park, 0);
-        Map<String, ?> entries = pref.getAll();
+        TreeMap<String, ?> entries = new TreeMap<String, Object>(pref.getAll());
         for (Map.Entry<String, ?> entry : entries.entrySet()) {
             String name = entry.getKey();
             boolean checked = Boolean.parseBoolean(entry.getValue().toString());
